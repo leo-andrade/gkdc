@@ -1,0 +1,15 @@
+@media only screen and (max-width: 768px) {
+    .hide-on-small-screen {
+        display: none;
+    }
+}
+
+.circular-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.filter-purple {
+    filter: invert(88%) sepia(44%) saturate(5926%) hue-rotate(354deg) brightness(96%) contrast(110%);
+}
