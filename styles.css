@@ -13,3 +13,7 @@
 .filter-purple {
     filter: invert(38%) sepia(8%) saturate(4638%) hue-rotate(183deg) brightness(98%) contrast(85%);
 }
+
+li, .pdf-links {
+    margin-top: 12px;
+}
