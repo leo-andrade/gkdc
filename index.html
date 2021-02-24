@@ -29,26 +29,28 @@
             <li class="nav-item active">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./daycare.html">Daycare</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Services
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./daycare.html">Daycare</a>
+                <a class="dropdown-item" href="./grooming.html">Grooming</a>
+                <a class="dropdown-item" href="./services.html">Other Services</a>
+                <a class="dropdown-item" href="./forms.html">Forms Upload</a>
+              </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./grooming.html">Grooming</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./services.html">Other Services</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Training
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./calendar.html">Training Calendar</a>
+                <a class="dropdown-item" href="./blog.html">Blog</a>
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./faqs.html">FAQs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./calendar.html">Training Calendar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./blog.html">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./forms.html">Forms Upload</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./contactus.html">Contact Us</a>
@@ -129,40 +131,54 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4 d-flex flex-column">
-          <img src="./img/map.png" class="circular-image mx-auto">
+          <span type="button" data-toggle="collapse" data-target="#collapseLocation" aria-expanded="false" aria-controls="collapseLocation"> <img src="./img/map.png" class="circular-image mx-auto"> </span>
           <h2>Location</h2>
-          <p>We're conveniently located just off the 84th Street exit off the I-80. Our great location allows us to offer you an hassle-free experience for drop-off and pick-up for daycare and other services.</p>
-          <p>8511 Frederick Street <br> Omaha, NE 68124-3054 <br> <a href="tel:402-614-3333">(402) 614-3333</a> <br> Hours: 7:00AM - 6:00PM <br> Monday - Friday</p>
-          <p class="mt-auto"><a class="btn btn-secondary" href="https://goo.gl/maps/3rdnWMgfC51i7rtC8" role="button" target="_blank">Open in Google Maps &raquo;</a></p>
+          <div class="collapse" id="collapseLocation" style="margin-top: 24px;">
+            <p>We're conveniently located just off the 84th Street exit off the I-80. Our great location allows us to offer you an hassle-free experience for drop-off and pick-up for daycare and other services.</p>
+            <p>8511 Frederick Street <br> Omaha, NE 68124-3054 <br> <a href="tel:402-614-3333">(402) 614-3333</a> <br> Hours: 7:00AM - 6:00PM <br> Monday - Friday</p>
+            <p class="mt-auto"><a class="btn btn-secondary" href="https://goo.gl/maps/3rdnWMgfC51i7rtC8" role="button" target="_blank">Open in Google Maps &raquo;</a></p>
+          </div>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4 d-flex flex-column">
-          <img src="./img/facebook-brands.svg" class="circular-image filter-purple mx-auto">
+          <span type="button" data-toggle="collapse" data-target="#collapseFacebook" aria-expanded="false" aria-controls="collapseFacebook"> <img src="./img/facebook-brands.svg" class="circular-image filter-purple mx-auto">
+          </span>
           <h2>Facebook</h2>
-          <br> <br> <br>
-          <p>Stay up to date by giving our page a follow on Facebook. You'll get a chance to catch a glimpse of what goes on during daycare and get important announcements.</p>
-          <p class="mt-auto"><a class="btn btn-secondary" href="https://www.facebook.com/Karmadogcenter/" role="button" target="_blank">Follow us on Facebook &raquo;</a></p>
+          <div class="collapse" id="collapseFacebook" style="margin-top: 24px;">
+            <p>Stay up to date by giving our page a follow on Facebook. You'll get a chance to catch a glimpse of what goes on during daycare and get important announcements.</p>
+            <p class="mt-auto"><a class="btn btn-secondary" href="https://www.facebook.com/Karmadogcenter/" role="button" target="_blank">Follow us on Facebook &raquo;</a></p>
+          </div>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4 d-flex flex-column">
-          <img src="./img/logo.jpg" class="circular-image mx-auto">
+          <span type="button" data-toggle="collapse" data-target="#collapseService" aria-expanded="false" aria-controls="collapseService"><img src="./img/logo.jpg" class="circular-image mx-auto"></span>
           <h2>At your Service</h2>
-          <p>We provide exceptional daycare, dog training, exercise programs, pet sitting and grooming services. At Good Karma Dog Center you and your furry friend can expect:</p>
-          <ul style="text-align: start;">
-            <li>A clean, safe, and happy environment for your dog</li>
-            <li>Anti-fatigue, environmentally friendly rubber flooring</li>
-            <li>Exercise and socialization programs</li>
-            <li>Grooming</li>
-            <li>Dog training and more</li>
-          </ul>
-          <p class="mt-auto"><a class="btn btn-secondary" href="./services.html" role="button">View more details &raquo;</a></p>
+          <div class="collapse" id="collapseService" style="margin-top: 24px;">
+            <p>We provide exceptional daycare, dog training, exercise programs, pet sitting and grooming services. At Good Karma Dog Center you and your furry friend can expect:</p>
+            <ul style="text-align: start;">
+              <li>A clean, safe, and happy environment for your dog</li>
+              <li>Anti-fatigue, environmentally friendly rubber flooring</li>
+              <li>Exercise and socialization programs</li>
+              <li>Grooming</li>
+              <li>Dog training and more</li>
+            </ul>
+            <p class="mt-auto"><a class="btn btn-secondary" href="./services.html" role="button">View more details &raquo;</a></p>
+          </div>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
       <hr class="featurette-divider">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="featurette-heading">Testimonials</h2>
+        </div>
+      </div>
+      <hr class="featurette-divider">
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h3 class="featurette-heading">Review by Amanda</h3>
-          <p class="lead">Thank goodness for our referral to GKDC from a good friend! Both my pups have enjoyed daycare, my shy girl loves hanging out at the front desk with Barbara and my energetic baby boy loves playing with his pup and human friends! During daycare the staff not only let the pups play but interact with them too. They post pictures on Facebook so it's easy to see your pup having a great time! Isabella recommended training for my boy, we started with basic classes and progressed to puppy parkour and public manners classes. These classes helped him gain confidence and gave me the tools to help him in a positive manner. I continue to use the things we learned in class with both my pups and our foster pups too! We've utilized pet sitting also, it was nice to know that my pup was in a loving home while I'm was out of town and I got text updates too! All of the staff at Good Karma are amazing and I always know my babies are safe and having fun when they are there!</p>
+          <p class="lead">Thank goodness a good friend referred us to Good Karma Dog Center! </p>
+          <p class="lead">My shy girl Daisy loves hanging out at the front desk with Barbara while my energetic baby boy Dallas enjoys playing with his canine and human friends!</p>
+          <p class="lead">Isabella recommended training for my boy Dallas. We started with basic classes and progressed to puppy parkour and public manners classes. Dallas’s self-confidence flourished and I learned new skills that I use daily with our two dogs and our foster pups too! </p>
+          <h3 class="featurette-heading text-right">Amanda Y.</h3>
         </div>
         <div class="col-md-5">
           <img src="./img/Dallas.png" style="width: 100%">
@@ -173,11 +189,11 @@
   
       <div class="row featurette">
         <div class="col-md-7 order-md-2">
-          <h3 class="featurette-heading">Review by Kim</h3>
-          <p class="lead">Three years ago,  I was referred to Good Karma Dog Center when my Labrador retriever was a 6 month old puppy having many issues, the most important being socialization. 
-            The staff slowly introduced Quinn to the dogs that were enrolled at Good Karma.
-            Quinn also had access to in home training and classes offered which helped with
-            socialization, training and a general understanding of dogs.  The positive reinforcement has helped Quinn become a happy dog.  Happy dogs are good dogs!!  Quinn waits at the door to go see her friends everyday.  When Quinn is at Good Karma, I know she is in good hands and she is happy!!!!</p>
+          <p class="lead">Three years ago, I was referred to Good Karma Dog Center when my Labrador Retriever Quinn was a 6-month-old puppy having many issues, particularly socialization skills. </p>
+          <p class="lead">The staff slowly and patiently introduced Quinn to the dogs enrolled at Good Karma.
+            Quinn also had in-home training and participated in group classes that helped her sociability and provided me training tools and a general understanding of dog behavior.</p>
+          <p class="lead">Quinn waits at the door to go see her friends every day. When Quinn is at Good Karma Dog Center, I know she is in good hands and that she is happy! Happy dogs are good dogs!</p>
+          <h3 class="featurette-heading text-right">Kim G.</h3>
         </div>
         <div class="col-md-5 order-md-1">
           <img src="./img/Quinn.png" style="width: 100%">
@@ -188,12 +204,10 @@
   
       <div class="row featurette">
         <div class="col-md-7">
-          <h3 class="featurette-heading">Review by Lolly</h3>
-          <p class="lead">We have two rescue dogs, a male/female bonded pair, they were found wandering after a hurricane. The pair had been kenneled for 8 months prior to us adopting them.
-            Our female, Ursula, loves going to Good Karma Daycare every week! It provides socialization and stimulation for her. 
-            Nash, our male, came to us with many issues. He was underweight and showed signs of stress (hair loss, skin sensitivity). Nash was extremely distrustful of most people, especially men, Barbara and Isabella at Good Karma did an evaluation and found him unable to attend daycare but suggested we start with obedience classes. We went to our first class with Isabella two years ago, since then Nash has attended many classes. He absolutely loves learning new things and gets super excited to go to class. 
-            He has learned so much but the most amazing thing is that he is a much more confident, trusting and happy dog. Isabella has taken the time to work with Nash (and us) and we've gone from Nash being an especially reactive dog (barking wildly when he would see another dog) to one that will focus on his commands while dogs are nearby. Of course this is a journey we are on but the strides Nash has made are tremendous. We could not have done this without Isabella, Barbara and the entire staff at Good Karma. 
-            Good Karma is wonderful for our Ursula but it's been transformative for Nash. Their experience and patience with "difficult" dogs like Nash has been beyond helpful for us and I couldn't recommend them more!</p>
+          <p class="lead">We have two rescue dogs, a male/female bonded pair who were found wandering after a hurricane. The pair had been kenneled for 8 months before we adopted them. Nash, our male, was underweight and showed definite signs of stress (hair loss, skin sensitivity). Nash was extremely distrustful of most people, especially men.  </p>
+          <p class="lead">Barbara and Isabella evaluated Nash and determined that he was not a good candidate for daycare but suggested we enroll him in obedience classes. We attended our first class with Isabella two years ago and since then Nash has matured into a more confident, less anxious and fearful dog. </p>
+          <p class="lead">Good Karma is wonderful for Ursula but it's been transformative for Nash. </p>
+          <h3 class="featurette-heading text-right">Lolly K.</h3>
         </div>
         <div class="col-md-5">
           <img src="./img/ursula_nash.png" style="width: 100%">
@@ -202,7 +216,19 @@
   
       <hr class="featurette-divider">
       
-
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <p class="lead">I have known Barbara Flick for many years. We lost touch for a few but I recognized her drive at a young age. </p>
+          <p class="lead">I have always felt welcome at Good Karma Dog Center and my Golden Retriever Mosley looks forward to the days he spends with his friends!  </p>
+          <p class="lead">Amazing staff also...good vibes run down the leash.</p>
+          <h3 class="featurette-heading text-right">Diane C.</h3>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="./img/aboutus2.png" style="width: 100%">
+        </div>
+      </div>
+  
+      <hr class="featurette-divider">
 
       <footer class="container">
         <p class="float-right"><a href="#">Back to top</a></p>
